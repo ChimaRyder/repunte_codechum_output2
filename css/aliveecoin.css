@@ -1,0 +1,28 @@
+#aliveecoin {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.aliveecoin-header > * {
+    margin: 0;
+}
+
+.aliveecoin-header h6 {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 0.6em;
+    margin-bottom: 10px;
+}
+
+.aliveecoin-coin {
+    height: 13px;
+    margin: 4px;
+}
+
+.aliveecoin-image, .aliveecoin-text {
+    grid-row: 2 / -1;
+}
+
+.aliveecoin-image {
+    background: url("images/fourth-section-image.png") no-repeat center;
+}

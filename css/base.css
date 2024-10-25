@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0 25%;
+    --primary: #5c65ff;
+    --secondary: rgba(26, 26, 26, 0.6);
+    --tertiary: rgba(243, 243, 243, 0.95);
+    --size-normal: 12px;
+    font-size: var(--size-normal);
+}
+
+header {
+    position: fixed;
+    top: 25px;
+}
+
+header img {
+    height: 23px;
+}
+
+main {
+    height: inherit;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.container {
+    height: inherit;
+    display: grid;
+    padding: 50px 0;
+}
+
+div[class$="image"] {
+    background-size: contain;
+}
+
+div[class$="header"], div[class$="footer"] {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class$="header"] {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+div[class$="text"] {
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div[class$="text"] > * {
+    margin: 0;
+}
+
+div[class$="text"] h3 {
+    color: var(--primary);
+    margin: 10px;
+}
+
+div[class$="text"] p {
+    color: var(--secondary);
+    font-size: 0.9em;
+}
+
+label, input, button {
+    border: 0;
+    background: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+input, button {
+    background-color: rgba(232, 232, 232, 0.91);
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+button {
+    background: rgb(92,101,255);
+    background: linear-gradient(90deg, rgba(92,101,255,1) 0%, rgba(133,101,255,1) 65%, rgba(182,101,255,1) 100%);
+    color: var(--tertiary);
+    font-weight: bold;
+}
+
+footer {
+    grid-column: span 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: 1.3em;
+}

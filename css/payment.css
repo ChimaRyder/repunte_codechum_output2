@@ -1,0 +1,12 @@
+#payments {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.payments-text, .payments-image {
+    grid-row: span 2;
+}
+
+.payments-image {
+    background: url("images/third-section-image.png") no-repeat center;
+}

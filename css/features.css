@@ -1,0 +1,37 @@
+#features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.features-image {
+    background: url("images/second-section-image.png") no-repeat center;
+}
+
+.features-list-grid {
+    height: inherit;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px;
+    gap: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: start;
+    font-size: 1.2em;
+    gap: 4px;
+    color: var(--secondary);
+}
+
+.feature-item p{
+    margin: 0;
+}
+
+.features-footer {
+    align-items: start;
+    padding: 0 19rem;
+    font-size: 1.3em;
+    color: var(--secondary);
+    font-weight: bold;
+    text-align: center;
+}

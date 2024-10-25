@@ -1,0 +1,16 @@
+#grow {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.grow-image, .grow-text {
+    grid-row: 2 / 4;
+}
+
+.grow-image {
+    background: url("images/fifth-section-image.png") no-repeat center;
+}
+
+.grow-text, .bonus-text {
+    padding: 0 40px;
+}

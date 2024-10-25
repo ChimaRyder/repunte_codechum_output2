@@ -1,0 +1,19 @@
+#bonus {
+    background: url("images/particles.svg") repeat center;
+    background-size: contain;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.bonus-image, .bonus-text {
+    grid-row: 2 / 4;
+}
+
+.bonus-text p > span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.bonus-image {
+    background: url("images/sixth-section-image.png") no-repeat center;
+}

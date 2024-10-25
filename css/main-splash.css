@@ -1,0 +1,26 @@
+#main-splash {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.splash-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+    color: var(--primary);
+}
+
+.splash-info h1 {
+    font-size: 2.3em;
+    font-weight: normal;
+}
+
+.splash-info span {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.splash-image {
+    background: url('images/first-section-image.png') no-repeat center;
+    margin: 30px;
+}
